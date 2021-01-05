@@ -1,0 +1,188 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.5s ease;
+	height: 5rem;
+	width: 100%;
+	padding: 0 4rem;
+	z-index: 1;
+
+	.title {
+		background-color: transparent;
+		font-weight: bold;
+		font-size: 1rem;
+		font-family: 'Trocchi', serif;
+		color: rgb(168, 153, 118);
+	}
+
+	.menu {
+		display: flex;
+		align-items: center;
+		transition: all 0.3s ease;
+
+		span {
+			cursor: pointer;
+			font-size: 0.65rem;
+			margin: 0 1.25rem;
+			font-weight: 500;
+			padding-bottom: 0.25rem;
+			border-bottom: solid 2px transparent;
+			color: rgb(27, 60, 80);
+			transition: all 0.3s ease;
+
+			&:hover {
+				color: rgb(168, 153, 118);
+				border-color: rgb(168, 153, 118);
+			}
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-device-width: 1025px) and (max-device-height: 1367px) {
+	.navbar {
+		padding: 0;
+		align-items: center;
+		justify-content: center;
+
+		.title {
+			margin-right: 1.25rem;
+			// display: none;
+		}
+
+		.nav {
+			align-items: center;
+
+			span {
+				margin: 0 1.25rem;
+				padding: 0;
+			}
+		}
+	}
+}
+
+@media only screen and(max-device-width: 768px) and (max-device-height: 1024px),
+	only screen and (max-device-width: 926px) and (max-device-height: 428px) and (orientation: landscape) {
+	.navbar {
+		position: relative;
+		justify-content: space-between;
+		padding: 0 3rem;
+		z-index: inherit;
+
+		.menu {
+			position: fixed;
+			width: 100vw;
+			height: -webkit-fill-available;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			padding-left: 6rem;
+			right: 0;
+			top: 0;
+			z-index: 10;
+			background: url('../../assets/nav-bg.jpg') center;
+			background-size: cover;
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				background: rgb(30, 37, 39);
+				opacity: 0.8;
+				z-index: 0;
+			}
+
+			span {
+				font-size: 0.9rem;
+				margin: 1.5rem 0;
+				color: white;
+				transition: all 0.5s ease;
+				z-index: 5;
+			}
+
+			&.menu-hidden {
+				pointer-events: none;
+				opacity: 0;
+
+				span {
+					opacity: 0;
+					letter-spacing: 5px;
+					transform: translateX(50px);
+				}
+			}
+		}
+
+		.menu-button {
+			position: relative;
+			width: 30px;
+			height: 25px;
+			z-index: 100;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.line {
+				width: 100%;
+				height: 3px;
+				background-color: black;
+				border-radius: 15px;
+				transition: all 0.3s ease;
+			}
+
+			&.button-active {
+				.line {
+					background-color: white;
+
+					&:first-of-type {
+						transform-origin: bottom left;
+						transform: rotate(45deg);
+					}
+					&:nth-of-type(2) {
+						opacity: 0;
+						transform: translateX(-20px);
+					}
+					&:nth-of-type(3) {
+						transform: rotate(-45deg);
+						transform-origin: top left;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-device-width: 428px) and (max-device-height: 926px) {
+	.navbar {
+		width: 100%;
+		padding: 0 1.5rem;
+
+		.menu-button {
+			margin: 0;
+		}
+
+		.menu {
+			padding-left: 2rem;
+
+			span {
+				margin: 1rem 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-device-width: 926px) and (max-device-height: 428px) and (orientation: landscape) {
+	.navbar {
+		.menu {
+			span {
+				margin: 0.28rem 0;
+			}
+		}
+	}
+}

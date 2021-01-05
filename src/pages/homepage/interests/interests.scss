@@ -1,0 +1,206 @@
+.interests {
+	position: relative;
+	padding: 5rem 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.title {
+		font-family: 'Alegreya', serif;
+		font-weight: 500;
+		color: rgb(34, 56, 66);
+		transition: all 0.5s ease;
+	}
+
+	.grid-container {
+		margin-top: 5rem;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 3fr 3fr 4fr;
+		grid-template-rows: repeat(2, 15rem);
+		grid-gap: 2rem;
+		padding: 0 4rem;
+
+		.grid-box {
+			position: relative;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.7s ease;
+			cursor: pointer;
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				background-color: black;
+				opacity: 0.2;
+				z-index: 0;
+				transition: all 0.3s ease;
+			}
+
+			.description {
+				position: relative;
+				padding: 1.25rem 2.25rem;
+				max-width: 18rem;
+				font-size: 0.75rem;
+				line-height: 1.15rem;
+				z-index: 1;
+				opacity: 0;
+				transition: all 0.3s ease;
+				background-color: transparentize($color: #4f7381, $amount: 0.5);
+			}
+
+			&.music {
+				grid-row: 1/2;
+				background: url('../../../assets/headphones.jpg') center;
+				background-size: cover;
+			}
+			&.astronomy {
+				grid-row: 1/3;
+				background: url('../../../assets/astronomy.jpg') center;
+				background-size: cover;
+				transition-delay: 0.2s;
+			}
+			&.books {
+				grid-row: 1/3;
+				background: url('../../../assets/reading.jpg') center;
+				background-size: cover;
+				transition-delay: 0.3s;
+			}
+			&.gym {
+				background: url('../../../assets/gym.jpg') center;
+				background-size: cover;
+				transition-delay: 0.1s;
+			}
+			&:hover {
+				&::after {
+					opacity: 0.7;
+				}
+				.description {
+					opacity: 1;
+				}
+			}
+		}
+
+		.box-hidden {
+			&.grid-box {
+				opacity: 0;
+			}
+			&.gym {
+				transform: translate(-10px, 50px);
+			}
+			&.books {
+				transform: scale(0);
+			}
+		}
+	}
+	&.hidden {
+		.title {
+			opacity: 0;
+			transform: translateX(50px);
+		}
+	}
+}
+
+@media only screen and (max-width: 1025px) and (max-height: 1367px) {
+	.interests {
+		.grid-container {
+			grid-template-columns: 2fr 2fr;
+			grid-template-rows: 12rem 12rem 20rem;
+			padding: 2rem;
+
+			.grid-box {
+				.description {
+					background: transparent;
+					padding: 1.5rem;
+				}
+			}
+
+			.music {
+				grid-row: 1;
+				grid-column: 1;
+			}
+			.gym {
+				grid-row: 2;
+				grid-column: 1;
+			}
+			.astronomy {
+				grid-column: 2;
+			}
+			.books {
+				grid-row: 3/-1 !important;
+				grid-column: 1 / 3;
+			}
+		}
+	}
+}
+
+@media screen and (max-device-width: 428px) and (max-device-height: 926px) {
+	.interests {
+		height: auto;
+		padding: 0rem 1rem;
+		padding-bottom: 3rem;
+
+		.title {
+			font-size: 1.5rem;
+			line-height: 2.75rem;
+			transition-delay: 0s;
+		}
+
+		.grid-container {
+			margin: 0;
+			padding: 0;
+			height: auto;
+			grid-template-columns: 1fr;
+			grid-template-rows: 15rem 15rem 15rem;
+			grid-gap: 1rem;
+
+			.grid-box {
+				width: 100%;
+				height: 15rem;
+				grid-row: inherit !important;
+				grid-column: 1;
+
+				&::after {
+					opacity: 0.7;
+				}
+
+				.description {
+					opacity: 1;
+					line-height: 1.15rem;
+					background: transparent;
+					padding: 2rem;
+					width: 100%;
+				}
+			}
+			.music {
+				grid-row: 1;
+				grid-column: 1;
+			}
+
+			.box-hidden {
+				transition-delay: 0s;
+				.title {
+					transform: none;
+				}
+				&.gym {
+					transform: none;
+				}
+				&.books {
+					transform: none;
+				}
+			}
+		}
+		&.hidden {
+			.title {
+				transform: none;
+			}
+		}
+	}
+}

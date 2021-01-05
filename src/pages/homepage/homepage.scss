@@ -1,0 +1,16 @@
+.homepage {
+	position: relative;
+
+	.transition-box-dark {
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background-color: rgb(34, 56, 66);
+		z-index: 500;
+		opacity: 0;
+		pointer-events: none;
+		transition: all 0.3s cubic-bezier(.51, .74, .44, .93);
+	}
+}

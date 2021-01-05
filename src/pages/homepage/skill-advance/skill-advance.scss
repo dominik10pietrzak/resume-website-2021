@@ -1,0 +1,46 @@
+.skill-advance {
+    display: flex;
+    // justify-content: center;
+
+    * {
+        transition: all 0.3s ease;
+    }
+
+    .star {
+        position: relative;
+        width: 0.5rem;
+        height: 0.5rem;
+        margin: 0 0.2rem;
+        background-color: #dbc99d;
+        border-radius: 100%;
+        opacity: 0.8;
+        transition: all 0.3s ease;
+
+
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+            border-radius: 100%;
+        }
+
+
+        &.active {
+            &::after {
+                clip-path: inset(0 100% 0 0);
+            }
+        }
+
+    }
+
+    .half-cut {
+        &::after {
+            clip-path: inset(0 0 0 50%);
+        }
+    }
+}
