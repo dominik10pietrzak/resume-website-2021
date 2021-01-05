@@ -17,8 +17,8 @@ def send_email_message(request):
     
     data = request.body
 
-    message_title = 'Wiadomość ze strony portfolio od - ' + data['message_name'] 
-    message = data['message']
+    message_title = 'Wiadomość ze strony portfolio od - ' + data.POST.get('message_name')
+    message = data.POST.get('message')
 
     send_mail(
         message_title,
@@ -27,7 +27,6 @@ def send_email_message(request):
         [settings.EMAIL_TARGET],
         fail_silently=False,
     )
-
 
     return HttpResponse("Email succesfully sent!")
 
