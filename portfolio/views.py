@@ -14,24 +14,22 @@ from django.views.decorators.csrf import csrf_exempt
 
 @csrf_exempt
 def send_email_message(request):
-
+    
     data = request.body
 
-    if request.method == "POST":
-        
-        message_title = 'Wiadomość ze strony portfolio od - ' + data['message_name'] 
-        message = data['message']
+    message_title = 'Wiadomość ze strony portfolio od - ' + data['message_name'] 
+    message = data['message']
 
-        send_mail(
-            message_title,
-            message,
-            settings.EMAIL_HOST_USER,
-            [settings.EMAIL_TARGET],
-            fail_silently=False,
-        )
+    send_mail(
+        message_title,
+        message,
+        settings.EMAIL_HOST_USER,
+        [settings.EMAIL_TARGET],
+        fail_silently=False,
+    )
 
 
-        return HttpResponse("Email succesfully sent!")
+    return HttpResponse("Email succesfully sent!")
 
     # return HttpResponse('ok')
     
