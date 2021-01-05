@@ -77,7 +77,8 @@ class MessageForm extends Component {
 
 		const csrftoken = this.getCookie('csrftoken');
 
-		let url = 'dominik-pietrzak-resume.herokuapp.com/message/send_email/';
+		let url =
+			'https://dominik-pietrzak-resume.herokuapp.com/message/send_email/';
 
 		fetch(url, {
 			method: 'POST',
