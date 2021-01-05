@@ -93,7 +93,7 @@ class MessageForm extends Component {
 				message: this.state.message
 			})
 		}).catch((err) => {
-			console.log(err);
+			console.log(err + 'Cos nie wyszło');
 		});
 
 		const communicate = document.querySelector(
