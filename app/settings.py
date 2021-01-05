@@ -129,12 +129,16 @@ USE_TZ = True
 
 
 
+# EMAIL_HOST = 'smtp.mailgun.org'
+# EMAIL_PORT = '587'
+# EMAIL_HOST_USER = config('EMAIL_HOST')
+# EMAIL_HOST_PASSWORD = config('PASSWORD')
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.mailgun.org'
-EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = config('EMAIL_HOST')
-EMAIL_HOST_PASSWORD = config('PASSWORD')
+EMAIL_HOST = os.environ.get('MAILGUN_SMTP_SERVER', '')
+EMAIL_PORT = os.environ.get('MAILGUN_SMTP_PORT', '')
+EMAIL_HOST_USER = os.environ.get('MAILGUN_SMTP_LOGIN', '')
+EMAIL_HOST_PASSWORD = os.environ.get('MAILGUN_SMTP_PASSWORD', '')
 
 
 STATIC_URL = '/static/'
