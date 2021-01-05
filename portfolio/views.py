@@ -16,7 +16,10 @@ from django.views.decorators.csrf import csrf_exempt
 def send_email_message(request):
 
 
-    data = json.loads(request.body.decode("utf-8"))
+    # data = json.loads(request.body.decode("utf-8"))
+    data = request.body
+
+    # print(data)
 
 
     if request.method == "POST":
