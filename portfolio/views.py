@@ -33,4 +33,7 @@ def send_email_message(request):
             fail_silently=False,
         )
 
-    return HttpResponse("Email succesfully sent!")
+        return HttpResponse("Email succesfully sent!")
+
+
+    
