@@ -14,7 +14,9 @@ from django.views.decorators.csrf import csrf_exempt
 
 @csrf_exempt
 def send_email_message(request):
-    data = json.loads(request.body.decode("utf-8"))
+    
+    data = json.loads(request.body)
+
     if request.method == "POST":
         
         message_title = 'Wiadomość ze strony portfolio od - ' + data['message_name'] 
