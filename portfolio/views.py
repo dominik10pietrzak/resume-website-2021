@@ -17,8 +17,8 @@ def send_email_message(request):
 
     try:
         data = json.loads(request.body.decode("utf-8"))
-    except:
-        return HttpResponse("Couldn't load data" + request)
+    except ValueError:
+        data = request.body
 
     if request.method == "POST":
         
