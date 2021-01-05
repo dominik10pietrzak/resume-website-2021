@@ -25,7 +25,7 @@ def send_email_message(request):
             message_title,
             message,
             settings.EMAIL_HOST_USER,
-            [config('EMAIL_TARGET')],
+            [settings.EMAIL_TARGET],
             fail_silently=False,
         )
 

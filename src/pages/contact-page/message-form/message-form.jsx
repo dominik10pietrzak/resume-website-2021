@@ -92,13 +92,9 @@ class MessageForm extends Component {
 				message_company: this.state.messageCompany,
 				message: this.state.message
 			})
-		})
-			.then((response) => {
-				// console.log(response);
-			})
-			.catch((err) => {
-				console.log(err);
-			});
+		}).catch((err) => {
+			console.log(err);
+		});
 
 		const communicate = document.querySelector(
 			'.message-form form .bottom p'
