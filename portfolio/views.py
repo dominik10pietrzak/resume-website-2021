@@ -14,12 +14,13 @@ from django.views.decorators.csrf import csrf_exempt
 
 @csrf_exempt
 def send_email_message(request):
-    if request.method == "POST":
 
-        try:
-            data = json.loads(request.body).decode('utf-8')
-        except ValueError:
-            print("Decoding has failed")
+    try:
+        data = json.loads(request.body.decode("utf-8"))
+    except ValueError:
+        print("Decoding has failed")
+
+    if request.method == "POST":
         
         message_title = 'Wiadomość ze strony portfolio od - ' + data['message_name'] 
         message = data['message']
