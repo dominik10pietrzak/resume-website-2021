@@ -60,8 +60,6 @@ class MessageForm extends Component {
 				}
 				item.style.borderColor = 'red';
 				isCorrect = false;
-			} else {
-				console.log('asd');
 			}
 		});
 
@@ -79,8 +77,7 @@ class MessageForm extends Component {
 
 		const csrftoken = this.getCookie('csrftoken');
 
-		let url =
-			'https://dominik-pietrzak-resume.herokuapp.com/message/send_email/';
+		let url = 'dominik-pietrzak-resume.herokuapp.com/message/send_email/';
 
 		fetch(url, {
 			method: 'POST',
