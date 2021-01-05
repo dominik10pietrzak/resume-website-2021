@@ -14,10 +14,6 @@ from django.views.decorators.csrf import csrf_exempt
 
 @csrf_exempt
 def send_email_message(request):
-
-
-
-
     if request.method == "POST":
 
         try:
@@ -37,6 +33,4 @@ def send_email_message(request):
             fail_silently=False,
         )
 
-
-
-        return HttpResponse("Email succesfully sent!")
+    return HttpResponse("Email succesfully sent!")
