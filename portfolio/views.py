@@ -26,15 +26,23 @@ def send_email_message(request):
     #     message = data['message']
 
 
-    #     send_mail(
-    #         message_title,
-    #         message,
-    #         settings.EMAIL_HOST_USER,
-    #         [settings.EMAIL_TARGET],
-    #         fail_silently=False,
-    #     )
+        # send_mail(
+        #     message_title,
+        #     message,
+        #     settings.EMAIL_HOST_USER,
+        #     [settings.EMAIL_TARGET],
+        #     fail_silently=False,
+        # )
 
-    #     return HttpResponse("Email succesfully sent!")
+        send_mail(
+            'tytul',
+            'wiadomosc',
+            settings.EMAIL_HOST_USER,
+            [settings.EMAIL_TARGET],
+            fail_silently=False,
+        )
 
-    return HttpResponse('ok')
+        return HttpResponse("Email succesfully sent!")
+
+    # return HttpResponse('ok')
     
