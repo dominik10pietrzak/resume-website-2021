@@ -17,7 +17,7 @@ def send_email_message(request):
 
     data = request.body
 
-    if request.method == "POST":
+    if request.get('method') == "POST":
         
         message_title = 'Wiadomość ze strony portfolio od - ' + data.POST['message_name'] 
         message = data.POST['message']
