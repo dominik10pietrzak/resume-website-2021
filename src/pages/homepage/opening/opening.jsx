@@ -44,11 +44,11 @@ class Opening extends Component {
 							<h1>Cześć! Nazywam się Dominik</h1>
 							<p>
 								Zajmuję się tworzeniem stron internetowych w
-								React'cie, robię to już prawie ponad rok i
-								uważam, że jestem w tym całkiem dobry. Od
-								niedawna piszę kod także w Pythonie, a
-								konkretniej w Django. Teraz poszukuję pracy na
-								stanowisku Junior Frontend Developera.
+								React'cie, robię to już ponad rok i uważam, że
+								jestem w tym całkiem dobry. Od niedawna piszę
+								kod także w Pythonie, a konkretniej w Django.
+								Teraz poszukuję pracy na stanowisku Junior
+								Frontend Developera.
 							</p>
 							{/* <span className='contact-button'>Kontakt</span> */}
 						</div>
