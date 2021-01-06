@@ -122,7 +122,8 @@ class MessageForm extends Component {
 				<div className='color-box' />
 				<form
 					className='form-container form-hidden'
-					onSubmit={this.checkIfFilled}>
+					onSubmit={this.checkIfFilled}
+					method='POST'>
 					<label>Jak się nazywasz?</label>
 					<input
 						className='text-field'
