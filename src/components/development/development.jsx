@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import './development.scss';
 
-import vue from '../../../assets/vue.png';
-import typescript from '../../../assets/typescript.png';
-import photoshop from '../../../assets/photoshop.png';
+import vue from '../../assets/vue.png';
+import typescript from '../../assets/typescript.png';
+import photoshop from '../../assets/photoshop.png';
 
-import lines from '../../../assets/lines.svg';
-import dots from '../../../assets/dots.svg';
+import lines from '../../assets/lines.svg';
+import dots from '../../assets/dots.svg';
 
 const Development = () => {
 	useEffect(() => {

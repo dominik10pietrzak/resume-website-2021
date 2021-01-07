@@ -1,22 +1,24 @@
 .footer {
-	background-color: rgb(27, 43, 51);
+	background-color: rgb(22, 22, 22);
 	width: 100%;
-	padding: 3rem 0;
+	padding: 3rem 20rem;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	color: white;
 	font-size: 0.7rem;
 
 	.contact-form-column {
 		display: flex;
 		flex-direction: column;
-		margin: 0 4rem;
 
 		.title {
 			background-color: transparent;
 			font-weight: bold;
 			font-family: 'Trocchi', serif;
 			color: rgb(168, 153, 118);
+		}
+
+		h3 {
 		}
 
 		span {
@@ -35,9 +37,8 @@
 			font-size: 0.75rem;
 			color: rgb(197, 197, 197);
 
-			span {
-				color: rgb(47, 120, 151);
-				font-weight: bold;
+			span:hover {
+				color: white;
 			}
 		}
 	}

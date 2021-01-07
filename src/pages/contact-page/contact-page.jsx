@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './contact-page.scss';
 import { useHistory } from 'react-router-dom';
 
-import MessageForm from './message-form/message-form';
+import MessageForm from '../../components/message-form/message-form';
 import Footer from '../../components/footer/footer';
 
 const goHome = (history) => {

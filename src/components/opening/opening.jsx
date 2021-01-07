@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './opening.scss';
 
-import { useHistory } from 'react-router-dom';
-
-import Navbar from '../../../components/navbar/navbar';
+import Navbar from '../../components/navbar/navbar';
 import ContactBar from '../contact-bar/contact-bar';
 
 class Opening extends Component {

@@ -40,7 +40,7 @@
 					width: 7rem;
 					height: 7rem;
 					z-index: 5;
-					background: url('../../../assets/lines.svg') center;
+					background: url('../../assets/lines.svg') center;
 					background-size: cover;
 				}
 
@@ -51,7 +51,7 @@
 					left: 0;
 					top: 0;
 					z-index: 1;
-					background: url('../../../assets/opening-background.jpg');
+					background: url('../../assets/opening-background.jpg');
 					background-position: center;
 					background-size: cover;
 					transition: all 1s ease;
@@ -240,8 +240,7 @@
 						width: 4rem;
 						height: 4rem;
 						bottom: -2rem;
-						background: url('../../../assets/lines-mobile.svg')
-							center;
+						background: url('../../assets/lines-mobile.svg') center;
 						background-size: cover;
 						opacity: 0.3;
 					}

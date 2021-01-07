@@ -1,10 +1,10 @@
 import './skills.scss';
 import { useEffect } from 'react';
 
-import react from '../../../assets/react.png';
-import python from '../../../assets/python.png';
-import adobe from '../../../assets/adobe.png';
-import english from '../../../assets/english.png';
+import react from '../../assets/react.png';
+import python from '../../assets/python.png';
+import adobe from '../../assets/adobe.png';
+import english from '../../assets/english.png';
 
 import SkillAdvance from '../skill-advance/skill-advance';
 

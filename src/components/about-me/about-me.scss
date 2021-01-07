@@ -63,6 +63,7 @@
 			cursor: pointer;
 			transition: 0s;
 			transition-delay: 0s;
+			border-bottom: solid 2px rgb(168, 153, 118);
 
 			&:hover {
 				color: white;
@@ -97,14 +98,14 @@
 			width: 25rem;
 			height: 25rem;
 			bottom: 0;
-			background: url('../../../assets/table.jpg');
+			background: url('../../assets/table.jpg');
 			background-position: center;
 			background-size: cover;
 
 			.lines {
 				content: '';
 				position: absolute;
-				background: url('../../../assets/lines.svg');
+				background: url('../../assets/lines.svg');
 				background-position: center;
 				background-size: cover;
 				width: 6rem;
@@ -232,7 +233,7 @@
 					width: 4rem;
 					top: -2rem;
 					height: 4rem;
-					background: url('../../../assets/lines-mobile.svg') center;
+					background: url('../../assets/lines-mobile.svg') center;
 					background-size: cover;
 					opacity: .3;
 				}

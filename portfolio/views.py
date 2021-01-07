@@ -22,7 +22,7 @@ def send_email_message(request):
         message_title = 'Wiadomość ze strony portfolio od - ' + data['message_name'] 
 
         if data['message_company'] != '':
-            message_title += '(' + data['message_company'] + ')'
+            message_title += ' (' + data['message_company'] + ')'
 
         
         message = data['message'] + '\n\n Email: ' + data['message_email']

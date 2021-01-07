@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import './homepage.scss';
 
 //components
-import Opening from './opening/opening';
-import AboutMe from './about-me/about-me';
-import Skills from './skills/skills';
-import Development from './development/development';
-import Interests from './interests/interests';
+import Opening from '../../components/opening/opening';
+import AboutMe from '../../components/about-me/about-me';
+import Skills from '../../components/skills/skills';
+import Development from '../../components/development/development';
+import Interests from '../../components/interests/interests';
 import Footer from '../../components/footer/footer';
 
 class Homepage extends Component {

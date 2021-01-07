@@ -58,23 +58,23 @@
 
 			&.music {
 				grid-row: 1/2;
-				background: url('../../../assets/headphones.jpg') center;
+				background: url('../../assets/headphones.jpg') center;
 				background-size: cover;
 			}
 			&.astronomy {
 				grid-row: 1/3;
-				background: url('../../../assets/astronomy.jpg') center;
+				background: url('../../assets/astronomy.jpg') center;
 				background-size: cover;
 				transition-delay: 0.2s;
 			}
 			&.books {
 				grid-row: 1/3;
-				background: url('../../../assets/reading.jpg') center;
+				background: url('../../assets/reading.jpg') center;
 				background-size: cover;
 				transition-delay: 0.3s;
 			}
 			&.gym {
-				background: url('../../../assets/gym.jpg') center;
+				background: url('../../assets/gym.jpg') center;
 				background-size: cover;
 				transition-delay: 0.1s;
 			}

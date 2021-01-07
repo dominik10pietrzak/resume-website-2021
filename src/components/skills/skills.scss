@@ -86,32 +86,32 @@
 			}
 
 			&.react {
-				background: url('../../../assets/react.jpg');
+				background: url('../../assets/react.jpg');
 				background-position: center;
 				background-size: cover;
 			}
 
 			&.python {
-				background: url('../../../assets/python.jpg');
+				background: url('../../assets/python.jpg');
 				background-position: center;
 				background-size: cover;
 			}
 
 			&.adobe {
-				background: url('../../../assets/adobe.jpeg');
+				background: url('../../assets/adobe.jpeg');
 				background-position: center;
 				background-size: cover;
 			}
 
 			&.english {
 				position: relative;
-				background: url('../../../assets/english.jpg');
+				background: url('../../assets/english.jpg');
 				background-position: center;
 				background-size: cover;
 
 				.lines {
 					position: absolute;
-					background: url('../../../assets/lines.svg');
+					background: url('../../assets/lines.svg');
 					background-position: center;
 					background-size: cover;
 					width: 8rem;
