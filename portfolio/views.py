@@ -25,7 +25,7 @@ def send_email_message(request):
             message_title += '(' + data['message_company'] + ')'
 
         
-        message = data['message'] + '\n \n email: ' + data['email']
+        message = data['message'] + '\n\n Email: ' + data['message_email']
 
         send_mail(
             message_title,
