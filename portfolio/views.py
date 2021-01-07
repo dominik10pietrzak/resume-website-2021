@@ -18,9 +18,14 @@ def send_email_message(request):
     data = json.loads(request.body)
 
     if request.method == "POST":
-        
+
         message_title = 'Wiadomość ze strony portfolio od - ' + data['message_name'] 
-        message = data['message']
+
+        if data['message_company'] != '':
+            message_title += '(' + data['message_company'] + ')'
+
+        
+        message = data['message'] + '\n \n email: ' + data['email']
 
         send_mail(
             message_title,
