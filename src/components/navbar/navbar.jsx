@@ -10,16 +10,17 @@ const scrollToSection = (section) => {
 		isChrome = true;
 	}
 
-	if (isChrome) {
-		$('html, body').animate(
-			{ scrollTop: $(section).offset().top },
-			750,
-			'swing'
-		);
+	const target = document.querySelector(section);
+
+	if (
+		isChrome &&
+		!(window.innerWidth <= 1024 && window.innerHeight <= 1366)
+	) {
+		window.scroll(0, target.offsetTop);
 	} else {
 		$('html, body').animate(
 			{ scrollTop: $(section).offset().top },
-			'slow',
+			400,
 			'swing'
 		);
 	}
