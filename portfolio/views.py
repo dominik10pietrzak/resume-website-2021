@@ -19,13 +19,13 @@ def send_email_message(request):
 
     if request.method == "POST":
 
-        message_title = 'Wiadomość ze strony portfolio od - ' + data['message_name'] 
+        message_title = 'Wiadomość od - ' + data['message_name'] 
 
         if data['message_company'] != '':
             message_title += ' (' + data['message_company'] + ')'
 
         
-        message = data['message'] + '\n\n Email: ' + data['message_email']
+        message = data['message'] + '\n\n Kontakt: ' + data['message_email']
 
         send_mail(
             message_title,

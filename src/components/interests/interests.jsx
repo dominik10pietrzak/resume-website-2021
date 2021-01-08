@@ -48,14 +48,14 @@ const Interests = () => {
 				</div>
 				<div className='grid-box astronomy box-hidden'>
 					<span className='description'>
-						Jedną z rzeczy, które wzbudzają we mnie fascynację jest
-						astronomia. Uwielbiam czytać o tym co się dzieje w
-						kosmosie.
+						Mało rzeczy budzi we mnie taką fascynację jak
+						astronomia, uwielbiam czytać o kosmosie i wszelkiego
+						rodzaju zjawiskach.
 					</span>
 				</div>
 				<div className='grid-box books box-hidden'>
 					<span className='description'>
-						Lubię poczytać dobrą książkę, nie tylko beletrystykę,
+						Lubię poczytać dobrą literaturę, nie tylko beletrystykę,
 						bardzo chętnie sięgam po książki naukowe z dziedzin
 						takich jak np. ekonomia.
 					</span>

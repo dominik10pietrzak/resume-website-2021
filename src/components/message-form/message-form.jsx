@@ -133,16 +133,16 @@ class MessageForm extends Component {
 						onChange={this.handleChange}
 						value={this.state.messageName}
 					/>
-					<label>Email</label>
+					<label>Kontakt (email, nr telefonu etc.)</label>
 					<input
 						className='text-field'
 						type='email'
-						name='messageEmail'
-						placeholder='Adres email'
+						name='messageContact'
+						placeholder='Kontakt'
 						onChange={this.handleChange}
 						value={this.state.messageEmail}
 					/>
-					<label>Nazwa firmy? (opcjonalne)</label>
+					<label>Nazwa firmy (opcjonalne)</label>
 					<input
 						className='text-field'
 						type='text'

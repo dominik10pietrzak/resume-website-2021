@@ -39,7 +39,7 @@
 				left: 0;
 				top: 0;
 				background-color: black;
-				opacity: 0.2;
+				opacity: 0.1;
 				z-index: 0;
 				transition: all 0.3s ease;
 			}
@@ -53,7 +53,7 @@
 				z-index: 1;
 				opacity: 0;
 				transition: all 0.3s ease;
-				background-color: transparentize($color: #4f7381, $amount: 0.5);
+				background-color: transparentize($color: black, $amount: 0.5);
 			}
 
 			&.music {
@@ -74,7 +74,7 @@
 				transition-delay: 0.3s;
 			}
 			&.gym {
-				background: url('../../assets/gym.jpg') center;
+				background: url('../../assets/football.jpg') center;
 				background-size: cover;
 				transition-delay: 0.1s;
 			}
@@ -143,6 +143,7 @@
 
 @media screen and (max-device-width: 428px) and (max-device-height: 926px) {
 	.interests {
+		align-items: flex-start;
 		height: auto;
 		padding: 0rem 1rem;
 		padding-bottom: 2rem;
@@ -174,9 +175,6 @@
 				.description {
 					opacity: 1;
 					line-height: 1.15rem;
-					background: transparent;
-					padding: 2rem;
-					width: 100%;
 				}
 			}
 			.music {

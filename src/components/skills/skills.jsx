@@ -26,7 +26,7 @@ const Skills = () => {
 			false
 		);
 
-		const timeout = skills.forEach((box, index) => {
+		skills.forEach((box, index) => {
 			window.addEventListener('scroll', () => {
 				if (window.scrollY > box.offsetTop - window.innerHeight / 2) {
 					setTimeout(() => {
@@ -54,7 +54,7 @@ const Skills = () => {
 				<div className='skill react hidden'>
 					<img className='skill-image' src={react} alt='react' />
 					<h1 className='skill-title'>React</h1>
-					<SkillAdvance advance={4} skillName='react' />
+					<SkillAdvance advance={4.5} skillName='react' />
 					<p className='skill-description'>
 						Reacta uczę się już prawie rok i uważam, że poznałem go
 						dość dobrze. Naukę zacząłem od kursów internetowych, a

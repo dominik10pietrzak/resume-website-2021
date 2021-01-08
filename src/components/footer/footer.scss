@@ -18,9 +18,6 @@
 			color: rgb(168, 153, 118);
 		}
 
-		h3 {
-		}
-
 		span {
 			font-size: 0.75rem;
 			cursor: pointer;
@@ -37,8 +34,11 @@
 			font-size: 0.75rem;
 			color: rgb(197, 197, 197);
 
-			span:hover {
+			span {
 				color: white;
+				&:hover {
+					color: rgb(127, 170, 196);
+				}
 			}
 		}
 	}
@@ -90,6 +90,10 @@
 
 			p {
 				width: 12rem;
+			}
+
+			span {
+				width: fit-content;
 			}
 		}
 	}
