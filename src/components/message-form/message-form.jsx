@@ -88,7 +88,7 @@ class MessageForm extends Component {
 			},
 			body: JSON.stringify({
 				message_name: this.state.messageName,
-				message_email: this.state.messageEmail,
+				message_contact: this.state.messageContact,
 				message_company: this.state.messageCompany,
 				message: this.state.message
 			})
@@ -136,11 +136,11 @@ class MessageForm extends Component {
 					<label>Kontakt (email, nr telefonu etc.)</label>
 					<input
 						className='text-field'
-						type='email'
+						type='text'
 						name='messageContact'
 						placeholder='Kontakt'
 						onChange={this.handleChange}
-						value={this.state.messageEmail}
+						value={this.state.messageContact}
 					/>
 					<label>Nazwa firmy (opcjonalne)</label>
 					<input
