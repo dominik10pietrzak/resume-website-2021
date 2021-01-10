@@ -63,12 +63,12 @@ const handleButtonVisibility = (isVisible) => {
 
 const Navbar = () => {
 	const [ menuButtonVisibility, setVisibility ] = useState(
-		window.innerWidth <= 926 && window.innerHeight <= 1024
+		window.innerWidth <= 926 && window.innerHeight <= 1280
 	);
 
 	useEffect(() => {
 		const isVisible =
-			window.innerWidth <= 926 && window.innerHeight <= 1024;
+			window.innerWidth <= 926 && window.innerHeight <= 1280;
 		const menu = document.querySelector('.navbar .menu');
 
 		handleButtonVisibility(isVisible);
@@ -76,7 +76,7 @@ const Navbar = () => {
 		window.addEventListener('resize', () => {
 			handleButtonVisibility(isVisible);
 			setVisibility(
-				window.innerWidth <= 926 && window.innerHeight <= 1024
+				window.innerWidth <= 926 && window.innerHeight <= 1280
 			);
 
 			menu.classList.add('menu-hidden');

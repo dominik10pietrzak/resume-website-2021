@@ -155,9 +155,9 @@
 		}
 
 		.grid-container {
+			height: auto;
 			margin: 0;
 			padding: 0;
-			height: auto;
 			grid-template-columns: 1fr;
 			grid-template-rows: 15rem 15rem 15rem;
 			grid-gap: 1rem;
@@ -168,15 +168,11 @@
 				grid-row: inherit !important;
 				grid-column: 1;
 
-				&::after {
-					opacity: 0.7;
-				}
-
 				.description {
-					opacity: 1;
 					line-height: 1.15rem;
 				}
 			}
+
 			.music {
 				grid-row: 1;
 				grid-column: 1;
