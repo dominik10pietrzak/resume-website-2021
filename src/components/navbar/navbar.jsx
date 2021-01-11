@@ -103,34 +103,37 @@ const Navbar = () => {
 				<span onClick={scrollToSection.bind(this, '.footer')}>
 					Kontakt
 				</span>
-				<div className='social-media'>
-					<i
-						className='fab fa-linkedin'
-						onClick={() =>
-							(window.location.href =
-								'https://www.linkedin.com/in/dominik-pietrzak-0223bb197')}
-					/>
-					<i
-						className='fab fa-github-square'
-						onClick={() =>
-							(window.location.href =
-								'https://github.com/dominik10pietrzak')}
-					/>
-					<i
-						className='fab fa-facebook-square'
-						onClick={() =>
-							(window.location.href =
-								'https://www.facebook.com/dominik.pietrzak.10')}
-					/>
-					<i
-						className='fab fa-instagram'
-						onClick={() =>
-							(window.location.href =
-								'https://www.instagram.com/dominik__pietrzak/?hl=pl')}
-					/>
-				</div>
+				{menuButtonVisibility ? (
+					<div className='social-media'>
+						<i
+							className='fab fa-linkedin'
+							onClick={() =>
+								(window.location.href =
+									'https://www.linkedin.com/in/dominik-pietrzak-0223bb197')}
+						/>
+						<i
+							className='fab fa-github-square'
+							onClick={() =>
+								(window.location.href =
+									'https://github.com/dominik10pietrzak')}
+						/>
+						<i
+							className='fab fa-facebook-square'
+							onClick={() =>
+								(window.location.href =
+									'https://www.facebook.com/dominik.pietrzak.10')}
+						/>
+						<i
+							className='fab fa-instagram'
+							onClick={() =>
+								(window.location.href =
+									'https://www.instagram.com/dominik__pietrzak/?hl=pl')}
+						/>
+					</div>
+				) : (
+					''
+				)}
 			</nav>
-
 			{menuButtonVisibility ? (
 				<div
 					className='menu-button'
