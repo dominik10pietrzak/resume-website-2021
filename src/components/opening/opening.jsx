@@ -48,7 +48,6 @@ class Opening extends Component {
 								Teraz poszukuję pracy na stanowisku Junior
 								Frontend Developera.
 							</p>
-							{/* <span className='contact-button'>Kontakt</span> */}
 						</div>
 					</div>
 				</div>

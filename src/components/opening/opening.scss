@@ -11,8 +11,8 @@
 		left: 0;
 		top: 0;
 		background-color: white;
-		z-index: 500;
 		transition: all .7s ease;
+		z-index: 500;
 	}
 
 	.flex-container {
@@ -21,17 +21,17 @@
 		width: calc(100% - 5rem);
 
 		.content {
-			width: 100%;
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
+			width: 100%;
 
 			.image-box {
 				position: relative;
 				width: 32rem;
 				height: 32rem;
-				transition: all 0.7s ease-out;
 				background-color: rgb(24, 48, 59);
+				transition: all 0.7s ease-out;
 
 				.lines {
 					position: absolute;
@@ -39,9 +39,9 @@
 					bottom: -3.5rem;
 					width: 7rem;
 					height: 7rem;
-					z-index: 5;
 					background: url('../../assets/lines.svg') center;
 					background-size: cover;
+					z-index: 5;
 				}
 
 				.bg-image {
@@ -54,24 +54,24 @@
 					background: url('../../assets/opening-background.jpg');
 					background-position: center;
 					background-size: cover;
-					transition: all 1s ease;
 					transform-origin: bottom left;
+					transition: all 1s ease;
 				}
 			}
 
 			.text-wrapper {
-				z-index: 1;
 				padding-left: 5rem;
 				color: rgb(34, 56, 66);
 				transition: all 0.8s ease;
+				z-index: 1;
 
 				* {
 					transition: all 0.8s ease;
 				}
 
 				h1 {
-					margin: 0;
 					max-width: 25rem;
+					margin: 0;
 					font-size: 2.25rem;
 					line-height: 2.75rem;
 					font-family: 'Alegreya', serif;
@@ -151,6 +151,7 @@
 						padding: 0;
 					}
 				}
+
 				&.content-hidden {
 					.text-wrapper {
 						h1 {

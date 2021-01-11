@@ -1,9 +1,9 @@
 .about-me {
+	position: relative;
+	display: flex;
 	padding: 6rem 10rem;
 	padding-bottom: 0;
 	margin-left: 5rem;
-	display: flex;
-	position: relative;
 	z-index: 1;
 
 	.black-rectangle {
@@ -12,7 +12,6 @@
 		height: 100%;
 		right: 0;
 		top: 0;
-		background-color: rgb(34, 56, 66);
 		background-color: rgb(24, 48, 59);
 
 		z-index: 0;
@@ -56,15 +55,15 @@
 
 		span {
 			width: fit-content;
-			color: rgb(168, 153, 118);
 			font-size: 0.75rem;
 			font-weight: bold;
-			padding-bottom: 0.25rem;
 			text-transform: uppercase;
+			padding-bottom: 0.25rem;
 			cursor: pointer;
+			color: rgb(168, 153, 118);
+			border-bottom: solid 2px rgb(168, 153, 118);
 			transition: 0s;
 			transition-delay: 0s;
-			border-bottom: solid 2px rgb(168, 153, 118);
 
 			&:hover {
 				color: white;

@@ -66,21 +66,6 @@ const Interests = () => {
 						formę fizyczną uważam za niezwykle ważną rzecz.
 					</span>
 				</div>
-				{/* <div className='image' />
-			<div className='text'>
-				<p>
-					Interesuję się sportem, zwłaszcza piłką nożną, muzyką,
-					której słucham bez przerwy, astronomią i oczywiście
-					progamowaniem. Wolny czas lubię spędzać aktywnie. Dbanie o
-					formę fizyczną uważam za rzecz niezwykle ważną, nie tylko ze
-					względu na zdrowie, ale także dlatego, że regularnie
-					uprawiając sport, mogę ćwiczyć swój charakter, co korzystnie
-					wpływa praktycznie na wszystkie aspekty życia. Lubię także
-					poczytać dobrą książkę, nie tylko beletrystykę, bardzo
-					chętnie sięgam po książki naukowe z dziedzin takich jak np.
-					ekonomia.
-				</p>
-			</div> */}
 			</div>
 		</div>
 	);
